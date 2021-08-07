@@ -11,7 +11,7 @@ namespace ClientWebAPI
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // ReSharper disable once StringLiteralTypo
-            const string connectionString = "data source=DESKTOP-QG96KGI;initial catalog=ClientDatabase;user id=sa;password=NewPassw0rd";
+            const string connectionString = "data source=DESKTOP-N1VQPJU;Trusted_Connection=Yes;Integrated Security=SSPI;initial catalog=ClientDatabase";
             optionsBuilder.UseSqlServer(connectionString);
         }
     }
